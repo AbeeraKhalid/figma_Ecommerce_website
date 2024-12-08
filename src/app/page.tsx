@@ -16,26 +16,26 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export default function Home() {
   return (
     <main className=" bg-gray-50">
-       <div className="lg:hidden mt-2 flex justify-center items-center">
-            <Sheet>
-              <SheetTrigger asChild>
-                <button className="bg-gray-200 p-2 px-5 py-3 rounded-md text-sm font-medium">
-                  Open Categories
-                </button>
-              </SheetTrigger>
-              <SheetContent side="left" className="p-4">
-                <CategorySidebar />
-              </SheetContent>
-            </Sheet>
-          </div>
-          <div className="flex gap-6 mt-4">
-            <div className="hidden lg:block w-[20%]">
-              <CategorySidebar />
-            </div>
-            <div className="flex-1">
-              <MainCarousel />
-            </div>
-          </div>
+      <div className="lg:hidden mt-2 flex justify-center items-center">
+        <Sheet>
+          <SheetTrigger asChild>
+            <button className="bg-gray-200 p-2 px-5 py-3 rounded-md text-sm font-medium">
+              Open Categories
+            </button>
+          </SheetTrigger>
+          <SheetContent side="left" className="p-4">
+           <CategorySidebar />
+          </SheetContent>
+        </Sheet>
+      </div>
+      <div className="flex gap-6 mt-4">
+        <div className="hidden lg:block w-[20%]">
+          <CategorySidebar />
+        </div>
+        <div className="flex-1">
+          <MainCarousel />
+        </div>
+      </div>
       <section className=" mt-8">
         <FlashSales />
       </section>
